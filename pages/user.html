@@ -41,23 +41,28 @@
               </li>
             </ul>
             <div class="tab-content p-6 rounded-3 bg-white" id="pills-tabContent">
-              <div class="tab-pane d-flex fade show active" id="pills-info" role="tabpanel" aria-labelledby="pills-info-tab"
+              <div class="tab-pane fade show active" id="pills-info" role="tabpanel" aria-labelledby="pills-info-tab"
                 tabindex="0">
-                <div class="side-width">
-                  <h2 class="fs-4 mb-4">個人資料</h2>
-                </div>
-                <form action="">
-                  <div>
-                    <img class="w-120 rounded-circle" src="/assets//images/avatar.png" alt="face">
-                    <label for="fileUpload" class="btn border">
-                      <span class="material-icons-outlined me-1 align-bottom">
-                        file_upload
-                      </span>更新頭貼</label>
-                    <input type="file" name="fileUpload" id="fileUpload" class="d-none">
+                <div class="d-flex">
+                  <!-- 左邊 -->
+                  <div class="side-width">
+                    <h2 class="fs-4 mb-4">個人資料</h2>
                   </div>
+                  <!-- 右邊 -->
+                  <form action="">
+                    <div>
+                      <img class="w-120 rounded-circle" src="/assets//images/avatar.png" alt="face">
+                      <label for="fileUpload" class="btn border">
+                        <span class="material-icons-outlined me-1 align-bottom">
+                          file_upload
+                        </span>更新頭貼</label>
+                      <input type="file" name="fileUpload" id="fileUpload" class="d-none">
+                    </div>
+  
+                  </form>
+                  
 
-                </form>
-                
+                </div>
               </div>
 
               <!-- 預約紀錄 -->
