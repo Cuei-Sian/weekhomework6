@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>index</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-  <script type="module" crossorigin src="/weekhomework6/assets/main-BtGwSWnJ.js"></script>
-  <link rel="stylesheet" crossorigin href="/weekhomework6/assets/main-CpH6Dfzv.css">
+  <script type="module" crossorigin src="/weekhomework6/assets/main-DJBZX9v_.js"></script>
+  <link rel="stylesheet" crossorigin href="/weekhomework6/assets/main-CXxkb29y.css">
 </head>
 
 
@@ -67,28 +67,103 @@
               </li>
             </ul>
             <div class="tab-content p-6 rounded-3 bg-white" id="pills-tabContent">
-              <div class="tab-pane fade show active" id="pills-info" role="tabpanel" aria-labelledby="pills-info-tab"
-                tabindex="0">
-                <div class="d-flex">
-                  <!-- 左邊 -->
-                  <div class="side-width">
-                    <h2 class="fs-4 mb-4">個人資料</h2>
-                  </div>
-                  <!-- 右邊 -->
-                  <form action="">
-                    <div>
-                      <img class="w-120 rounded-circle" src="/weekhomework6/assets/avatar-QGHQ479s.png" alt="face">
-                      <label for="fileUpload" class="btn border">
-                        <span class="material-icons-outlined me-1 align-bottom">
-                          file_upload
-                        </span>更新頭貼</label>
-                      <input type="file" name="fileUpload" id="fileUpload" class="d-none">
+              <!-- 個人資料 -->
+              <div class="tab-pane fade show active" id="pills-info" role="tabpanel" aria-labelledby="pills-info-tab" tabindex="0">
+              
+                <form action="" class="mb-6">
+                  <div class="d-flex">
+                    <!-- 左邊 -->
+                    <div class="side-width me-4">
+                      <h2 class="fs-4 ">個人資料</h2>
                     </div>
-  
-                  </form>
-                  
-
+                    <!-- 右邊 -->
+                    <div class="script-block">
+                      <!-- 區塊一：人像 -->
+                      <div class="mb-5">
+                        <img class="w-120 rounded-circle" src="/weekhomework6/assets/avatar-QGHQ479s.png" alt="face">
+                        <label for="fileUpload" class="btn border">
+                          <span class="material-icons-outlined me-1 align-bottom">
+                            file_upload
+                          </span>更新頭貼</label>
+                        <input type="file" name="fileUpload" id="fileUpload" class="d-none">
+                      </div>
+                      <!-- 區塊二：姓名 -->
+                      <div>
+                        <div class="form-floating mb-5">
+                          <input type="text" class="form-control" id="floatingInput" placeholder="text" value="Mokumaru">
+                          <label for="floatingInput">姓名</label>
+                        </div>
+                      </div>
+                      <!-- 區塊三：性別 -->
+                      <div class="mb-4">
+                        <p class="mb-2">性別</p>
+                        <div class="px-2">
+                          <div class="form-check form-check-inline me-4 mb-2">
+                            <input class="form-check-input" type="radio" name="sexual" id="female" value="female" checked>
+                            <label class="form-check-label" for="female">女性</label>
+                          </div>
+                          <div class="form-check form-check-inline me-4">
+                            <input class="form-check-input" type="radio" name="sexual" id="male" value="male">
+                            <label class="form-check-label" for="male">男性</label>
+                          </div>
+                          <div class="form-check form-check-inline me-4">
+                            <input class="form-check-input" type="radio" name="sexual" id="no comment" value="no comment">
+                            <label class="form-check-label" for="no comment">不願透露</label>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- 區塊四：生日 -->
+                      <div class="form-floating mb-5">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="date" value="2000/01/10">
+                        <label for="floatingInput">生日</label>
+                      </div>
+                      
+                      <!-- 區塊五：密碼 -->
+                      <div class="mb-5">
+                        <p class="mb-3">密碼</p>
+                        <button type="button" class="btn btn-outline-dark d-inline-flex align-items-center me-0.5">修改密碼<span
+                            class="material-icons-outlined">
+                            chevron_right
+                          </span></button>
+                      </div>
+                      <!-- 區塊六：電子信箱 -->
+                      <div class="form-floating mb-5">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" value="mokumaru@mail.com">
+                        <label for="floatingInput text-natural-50">信箱</label>
+                        <p class="text-natural-50 mx-1">盡量勿使用Yahoo或Hotmail郵件信箱，以免因擋信、漏信</p>
+                      </div>
+                      <!-- 區塊七：聯絡電話 -->
+                      <div class="form-floating mb-5">
+                        <input type="tel" class="form-control" id="floatingInput" placeholder="09-1234-5678" value="09-1234-5678">
+                        <label for="floatingInput">聯絡電話</label>
+                      </div>
+                      
+                      <!-- 區塊八：通訊地址 -->
+                      <div>
+                        <div class="form-floating mb-5">
+                          <input type="text" class="form-control" id="floatingInput" placeholder="text" value="高雄市三民區九如一路 87 號">
+                          <label for="floatingInput">通訊地址</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <div class="d-flex justify-content-center mb-6">
+                  <div class="me-5">
+                    <button type="button" class="btn btn-outline-dark d-inline-flex align-items-center mx-3 me-1">重新填寫<span
+                        class="material-icons-outlined">
+                        chevron_right
+                      </span></button>
+                  </div>
+                  <div class="">
+                    <button type="button" class="btn btn-outline-dark d-inline-flex align-items-center mx-3 me-1 active">儲存更新<span
+                        class="material-icons-outlined">
+                        chevron_right
+                      </span></button>
+                  </div>
                 </div>
+              
+              
               </div>
 
               <!-- 預約紀錄 -->
@@ -620,8 +695,8 @@
                         </span></button>
                     </div>
                     <div>
-                      <button type="button" class="btn btn-outline-dark d-inline-flex align-items-center me-1"
-                        check>儲存更新<span class="material-icons-outlined">
+                      <button type="button" class="btn btn-outline-dark d-inline-flex align-items-center me-1 active"
+                         >儲存更新<span class="material-icons-outlined">
                           chevron_right
                         </span></button>
                     </div>
